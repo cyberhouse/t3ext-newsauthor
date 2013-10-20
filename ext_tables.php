@@ -11,7 +11,7 @@ $tempColumns = array(
 		'exclude' => 1,
 		'label' => 'LLL:EXT:newsauthor/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.fe_author',
 		'config' => array(
-			'type' => 'group',
+			'type' => 'select',
 			'internal_type' => 'db',
 			'allowed' => 'fe_users',
 			'foreign_table' => 'fe_users',
@@ -19,6 +19,9 @@ $tempColumns = array(
 			'size' => 1,
 			'minitems' => 0,
 			'maxitems' => 1,
+			'items' => array(
+				array('', 0),
+			),
 		)
 	),
 );
