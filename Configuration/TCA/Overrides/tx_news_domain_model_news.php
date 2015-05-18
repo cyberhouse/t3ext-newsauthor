@@ -3,9 +3,6 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-/***************
- * Add fields to news item
- */
 $tempColumns = array(
 	'fe_author' => array(
 		'exclude' => 1,
@@ -26,7 +23,5 @@ $tempColumns = array(
 	),
 );
 
-t3lib_extMgm::addTCAcolumns('tx_news_domain_model_news', $tempColumns, TRUE);
-t3lib_extMgm::addToAllTCAtypes('tx_news_domain_model_news', 'fe_author');
-
-?>
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $tempColumns, TRUE);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news', 'fe_author');
