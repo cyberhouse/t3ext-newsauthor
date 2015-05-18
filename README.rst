@@ -3,12 +3,14 @@ TYPO3 Extension "newsauthor"
 
 This extension adds a relation to the table 'fe_users' to a news record of EXT:news.
 
-**Required:**
+**Required**
 
 - TYPO3 CMS 6.2 LTS
 - EXT:news 3.2.0
 
-License: GPLv2
+**License**
+
+GPLv2
 
 Installation
 ------------
